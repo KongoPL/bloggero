@@ -9,8 +9,17 @@
 	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.0';
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Bloggero</a>
+		<a class="navbar-brand" href="#">My Blog</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -18,30 +27,83 @@
 		<div class="collapse navbar-collapse" id="navbarContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Create Blog!</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Find Blog</a>
+					<a class="nav-link" href="#">Main Page</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">About Me</a>
 				</li>
 			</ul>
-			<ul class="navbar-nav my-2 my-lg-0">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Login</a>
-				</li>
-				<li class="nav-item">
-					or
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Register</a>
-				</li>
-			</ul>
 		</div>
 	</nav>
-	<div class="container">
-		
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-8">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<article class="news">
+								<div class="image"><img src="assets/img/articles/1.jpg" /></div>
+								<header class="h2">Test news</header>
+								<content>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in hendrerit libero, quis consectetur est. Morbi luctus velit at consequat scelerisque. Aliquam sodales pellentesque erat, porttitor porta augue hendrerit id. Etiam cursus in lectus sed pellentesque. Nulla purus metus, mollis sed interdum eget, pellentesque nec nunc. Aliquam egestas dolor eu tellus blandit, sed ultrices sem suscipit. Mauris et tortor imperdiet tellus ullamcorper vulputate. Sed libero diam, hendrerit id metus et, interdum ultricies ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nisi ligula, sollicitudin eget rutrum a, finibus quis nisl. Maecenas sit amet suscipit.
+								</content>
+								<footer class="text-right">
+									Written by <b>Kongo</b>, 21 July 2018 at 08:35
+								</footer>
+							</article>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-6">
+							<article class="news small">
+								<div class="image"><img src="assets/img/articles/2.jpg" /></div>
+								<header class="h3">Test news</header>
+								<content>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut diam rhoncus, suscipit erat vel, rhoncus nunc. Praesent purus dui, ultricies in commodo et, suscipit vel est. Suspendisse vestibulum neque augue, venenatis porttitor ante consequat nec. Mauris tellus diam, rutrum eget porta in, fermentum id ex. Suspendisse sem nisi, consequat.
+								</content>
+								<footer class="text-right">
+									Written by <b>Kongo</b>, 20 July 2018 at 08:35
+								</footer>
+							</article>
+						</div>
+						<div class="col-6">
+							<article class="news small">
+								<div class="image"><img src="assets/img/articles/3.jpg" /></div>
+								<header class="h3">Test news</header>
+								<content>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut diam rhoncus, suscipit erat vel, rhoncus nunc. Praesent purus dui, ultricies in commodo et, suscipit vel est. Suspendisse vestibulum neque augue, venenatis porttitor ante consequat nec. Mauris tellus diam, rutrum eget porta in, fermentum id ex. Suspendisse sem nisi, consequat.
+								</content>
+								<footer class="text-right">
+									Written by <b>Kongo</b>, 19 July 2018 at 08:35
+								</footer>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4 sidebar">
+				<div class="box">
+					<h3>Sign up for newsletter!</h3>
+					Don't miss anything and sign up for newsletter to stay up-to-date with latest news!
+					<form class="mt-3">
+						<div class="form-group">
+							<label for="name" class="font-weight-bold">Your name</label>
+							<input type="text" id="name" name="name" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="email" class="font-weight-bold">Your email</label>
+							<input type="email" id="email" name="email" class="form-control" />
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success align-center">Register for newsletter!</button>
+						</div>
+					</form>
+				</div>
+				<div class="box no-padding">
+					<div class="fb-page" data-href="https://www.facebook.com/FacebookforDevelopers/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/FacebookforDevelopers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FacebookforDevelopers/">Facebook for Developers</a></blockquote></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
